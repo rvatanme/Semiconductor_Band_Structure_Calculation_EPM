@@ -1,2 +1,2 @@
-# Emprical Psuedo-Potential Method
-Consider a box with Lx,Ly,Lz→ ∞, where in a periodic framework Ψ(r+Lx)=Ψ(r), Ψ(r+Ly)=Ψ(r), Ψ(r+Lz)=Ψ(r), then the solution to Schroedinger’s equation is:
+# Electronic Band Structure Calculation
+Electronin band structure of a solid provides the set of possible energies that an electron with a wavevector of k might have in that solid.  
