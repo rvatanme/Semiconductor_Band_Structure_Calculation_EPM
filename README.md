@@ -1,2 +1,2 @@
 # Electronic Band Structure Calculation
-Electronin band structure of a solid provides a set of possible energies that an electron with a wavevector of k might have in that solid. The veriaty of methods for band structure calculations have been proposed including: Emprical Psuedopotential Methods (EPM),  
+Electronin band structure of a solid provides a set of possible energies that an electron with a wavevector of k might have in that solid. The veriaty of methods for band structure calculations have been proposed including: Emprical Psuedopotential Methods (EPM), k.p perturbation theory, tight binding model, density functional theory, Green's function, etc.  
