@@ -24,4 +24,6 @@ Since u<sub>k</sub>(r) and U(r) function have the priodicity of the crystal, the
 
 ![](https://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%5CLARGE%20u_%7B%5Cvec%7Bk%7D%7D%28%5Cvec%7Br%7D%29%3D%5Csum_%7Bm%3D0%7D%5E%7BM%7Da_m%28%5Cvec%7Bk%7D%29e%5E%7Bi%5Cvec%7BG_m%7D.%5Cvec%7Br%7D%7D%2C%20%5C%3B%5C%3B%5C%3B%5C%3B%20U%28%5Cvec%7Br%7D%29%20%3D%20%5Csum_%7Bm%3D0%7D%5E%7BM%7DU%28%7C%5Cvec%7BG_m%7D%7C%29e%5E%7Bi%5Cvec%7BG_m%7D.%5Cvec%7Br%7D%7D)
 
-Here, since U(r) only depends on the magnitude of G<sub>m</sub>, the pseudo-potential is called local pseudo-potential otherwise it is called non-local pseudo-potential.
+Here, since U(r) only depends on the magnitude of G<sub>m</sub>, the pseudo-potential is called local pseudo-potential otherwise it is called non-local pseudo-potential. Therefor for a given k, the pseudo-wavefunction is expressed as follows:
+
+![]()
