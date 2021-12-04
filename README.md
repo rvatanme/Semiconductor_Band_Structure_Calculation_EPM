@@ -24,6 +24,12 @@ Since u<sub>k</sub>(r) and U(r) function have the priodicity of the crystal, the
 
 ![](https://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%5CLARGE%20u_%7B%5Cvec%7Bk%7D%7D%28%5Cvec%7Br%7D%29%3D%5Csum_%7Bm%3D0%7D%5E%7BM%7Da_m%28%5Cvec%7Bk%7D%29e%5E%7Bi%5Cvec%7BG_m%7D.%5Cvec%7Br%7D%7D%2C%20%5C%3B%5C%3B%5C%3B%5C%3B%20U%28%5Cvec%7Br%7D%29%20%3D%20%5Csum_%7Bm%3D0%7D%5E%7BM%7DU%28%7C%5Cvec%7BG_m%7D%7C%29e%5E%7Bi%5Cvec%7BG_m%7D.%5Cvec%7Br%7D%7D)
 
+G presents the reciprocal lattice vectors where:
+
+![](https://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%5CLARGE%20e%5E%7B-i%5Cvec%7BG%7D.%5Cvec%7BR%7D%7D%20%3D%201%2C%20%5C%3B%5C%3B%5C%3B%5C%3B%20%5Cvec%7BG%7D.%5Cvec%7BR%7D%3D2%5Cpi%20n%2C%20%5C%3B%5C%3B%5C%3B%5C%3B%20n%3D%5Csum_%7Bi%3D1%7D%5E%7B3%7Dn_im_i)
+
+![](https://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%5CLARGE%20%5Cvec%7BR%7D%20%3D%20n_1%5Cvec%7Ba_1%7D&plus;n_2%5Cvec%7Ba_2%7D&plus;n_3%5Cvec%7Ba_3%7D%5C%5C%5C%5C%20%5Cvec%7BG%7D%20%3D%20m_1%5Cvec%7Bb_1%7D&plus;m_2%5Cvec%7Bb_2%7D&plus;m_3%20%5Cvec%7Bb_3%7D%2C%20%5C%3B%5C%3B%5C%3B%20a_i.b_j%3D2%5Cpi%20%5Cdelta%20_%7Bi%2Cj%7D)
+
 Here, since U(r) only depends on the magnitude of G<sub>m</sub>, the pseudo-potential is called local pseudo-potential otherwise it is called non-local pseudo-potential. Therefor for a given k, the pseudo-wavefunction is expressed as follows:
 
 ![](https://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%5CLARGE%20%5Cpsi_%7B%5Cvec%7Bk%7D%7D%28%5Cvec%7Br%7D%29%3D%5Csum_%7Bm%3D0%7D%5E%7BM%7Da_m%28%5Cvec%7Bk%7D%29e%5E%7Bi%28%5Cvec%7BG_m%7D&plus;%5Cvec%7Bk%7D%29.%5Cvec%7Br%7D%7D)
@@ -32,4 +38,4 @@ By substituting pseudo-function and Fourier transformed potential in the Schroed
 
 ![](https://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%5CLARGE%20%5B%5Cfrac%7B%5Chbar%20%5E2%28%5Cvec%7Bk%7D&plus;%5Cvec%7BG_m%7D%29%5E2%7D%7B2m%7D-E%5Da_m%28%5Cvec%7Bk%7D%29&plus;%5C%5C%5C%5C%5Csum_%7Bn%5Cneq%20m%7DU%28%7C%5Cvec%7BG_m%7D-%5Cvec%7BG_n%7D%7C%29a_n%28%5Cvec%7Bk%7D%29%3D0)
 
-Depending on the number (N) of chosen reciprocal plane waves, above equation has N solution that each of them presents the E<sub>nk</sub> and results to a<sub>m</sub>(n,k) and Ψ<sub>nk</sub>(r). The number of used reciprocal plane waves are determined by the cutoff energy where the energy of those plane waves are less than Ecutoff ћ<sup>2</sup>G<sup>2</sup>/2m<Ecutoff. |G<sup>2</sup>| is usually expressed in terms of (2π/a)<sup>2</sup> where a is the lattice constant.
+Depending on the number (N) of chosen reciprocal plane waves, above equation has N solution that each of them presents the E<sub>nk</sub> and results to a<sub>m</sub>(n,k) and Ψ<sub>nk</sub>(r). The number of used reciprocal plane waves are determined by the cutoff energy where the energy of those plane waves are less than Ecutoff ћ<sup>2</sup>G<sup>2</sup>/2m<Ecutoff. |G<sup>2</sup>| is usually expressed in terms of (2π/a)<sup>2</sup> where a is the lattice constant. Since for every k, there are a number of equivalent (k+G)’s, where Ψ<sub>k+G</sub>(r)=Ψk(r) and E(k+G)=E(k), the unique values of k are the ones inside the first Brillion zone.  
