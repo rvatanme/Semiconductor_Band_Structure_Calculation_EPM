@@ -28,6 +28,8 @@ Here, since U(r) only depends on the magnitude of G<sub>m</sub>, the pseudo-pote
 
 ![](https://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%5CLARGE%20%5Cpsi_%7B%5Cvec%7Bk%7D%7D%28%5Cvec%7Br%7D%29%3D%5Csum_%7Bm%3D0%7D%5E%7BM%7Da_m%28%5Cvec%7Bk%7D%29e%5E%7Bi%28%5Cvec%7BG_m%7D&plus;%5Cvec%7Bk%7D%29.%5Cvec%7Br%7D%7D)
 
-By substituting pseudo-function and Fourier transformed potential in the Schroedinger equation, then the matrix form of eigenvalue and eignvalue problem would be:
+By substituting pseudo-function and Fourier transformed potential in the Schroedinger equation, the matrix form of eigenvalue and eignvalue problem results in:
 
 ![](https://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%5CLARGE%20%5B%5Cfrac%7B%5Chbar%20%5E2%28%5Cvec%7Bk%7D&plus;%5Cvec%7BG_m%7D%29%5E2%7D%7B2m%7D-E%5Da_m%28%5Cvec%7Bk%7D%29&plus;%5C%5C%5C%5C%5Csum_%7Bn%5Cneq%20m%7DU%28%7C%5Cvec%7BG_m%7D-%5Cvec%7BG_n%7D%7C%29a_n%28%5Cvec%7Bk%7D%29%3D0)
+
+Depending on the number (N) of chosen reciprocal plane waves, above equation has N solution that each of them presents the E<sub>nk</sub> and results to a<sub>m</sub>(n,k) and Ψ<sub>nk</sub>(r). The number of used reciprocal plane waves are determined by the cutoff energy where the energy of those plane waves are less than Ecutoff ћ<sup>2</sup>G<sup>2</sup>/2m<Ecutoff. |G<sup>2</sup>| is usually expressed in terms of (2π/a)<sup>2</sup> where a is the lattice constant.
