@@ -43,18 +43,30 @@ Depending on the number (N) of chosen reciprocal plane waves, above equation has
 ## Periodic Potential: Reciprocal Space Expression 
 In general, periodic potential V<sub>p</sub>(r) is a linear combination of atomic potential, V<sub>n</sub>(r-τ<sub>n</sub>), that can be expressed as a summation over all lattice translational R vectors: 
 
-![](https://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%5CLARGE%20V_p%28%5Cvec%7Br%7D%29%3D%5Csum%20_%7BR%7D%20%5Csum_%7Bn%3D1%7D%5E%7BN%7DV_n%28%5Cvec%7Br%7D-%5Ctau%20_n%20-%20%5Cvec%7BR%7D%29)
+![](https://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%5CLARGE%20V_p%28%5Cvec%7Br%7D%29%3D%5Csum_%7BR%7D%20%5Csum_%7Bn%3D1%7D%5E%7BN%7DV_n%28%5Cvec%7Br%7D%20-%20%5Cvec%7B%5Ctau%20_n%7D%20-%5Cvec%7BR%7D%29)
 
 where r is the position of electron and τ<sub>n</sub> is the location of nth atom, both inside the unit cell. The inner sum of this equation can be substituted by the unit cell potential defined as follows:
 
-![](https://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%5CLARGE%20V_0%28%5Cvec%7Br%7D%29%20%3D%20%5Csum_%7Bn%3D1%7D%5E%7BN%7D%20V_n%28%5Cvec%7Br%7D-%5Ctau%20_n%29)
+![](https://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%5CLARGE%20V_0%28%5Cvec%7Br%7D%29%20%3D%20%5Csum_%7Bn%3D1%7D%5E%7BN%7D%20V_n%28%5Cvec%7Br%7D-%5Ctau%20_n%29%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%20%281%29)
 
 After substitution, the final form of periodic potential in real space results in:
 
-![](https://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%5CLARGE%20V_p%28%5Cvec%7Br%7D%29%20%3D%20%5Csum_%7BR%7DV_0%28%5Cvec%7Br%7D-%5Cvec%7BR%7D%29)
+![](https://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%5CLARGE%20V_p%28%5Cvec%7Br%7D%29%20%3D%20%5Csum_%7BG%7DV_0%28%5Cvec%7BG%7D%29e%5E%7Bi%5Cvec%7BG%7D.%5Cvec%7Br%7D%7D%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%20%282%29)
 
 As mentioned before, this periodic potential can be expanded by a set of chosen reciprocal plane waves:
 
-![](https://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%5CLARGE%20V_p%28%5Cvec%7Br%7D%29%20%3D%20%5Csum_%7BG%7DV_0%28%5Cvec%7BG%7D%29e%5E%7Bi%5Cvec%7BG%7D.%5Cvec%7Br%7D%7D%2C%20%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%20%281%29%20%5C%5C%5C%5C%5C%5C%20V_0%28%5Cvec%7BG%7D%29%20%3D%20%5Cfrac%7B1%7D%7B%5COmega%7D%5Cint_%7B%5COmega%7Dd%5E3rV_0%28%5Cvec%7Br%7D%29e%5E%7B-i%5Cvec%7BG%7D.%5Cvec%7Br%7D%7D%5C%3B%5C%3B%5C%3B%5C%3B%20%282%29)
+![](https://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%5CLARGE%20V_p%28%5Cvec%7Br%7D%29%20%3D%20%5Csum_%7BG%7DV_0%28%5Cvec%7BG%7D%29e%5E%7Bi%5Cvec%7BG%7D.%5Cvec%7Br%7D%7D%2C%20%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%20%283%29%20%5C%5C%5C%5C%5C%5C%20V_0%28%5Cvec%7BG%7D%29%20%3D%20%5Cfrac%7B1%7D%7B%5COmega%7D%5Cint_%7B%5COmega%7Dd%5E3rV_0%28%5Cvec%7Br%7D%29e%5E%7B-i%5Cvec%7BG%7D.%5Cvec%7Br%7D%7D%5C%3B%5C%3B%5C%3B%5C%3B%20%284%29)
 
-where Ω is the unit cell volume and V<sub>0</sub>(G) is the unit cell potential expressed in reciprocal lattice. By substituing equation (2) in equation (1), we get the close form of a preiodic potential in a reciprocal space as follows:
+where Ω is the unit cell volume and V<sub>0</sub>(G) is the unit cell potential expressed in reciprocal lattice. By substituing equation (1) in equation (4), we get the unit cell potential as a sum of atomic potential in G space:
+
+![](https://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%5CLARGE%20V_0%28%5Cvec%7BG%7D%29%20%3D%5Cfrac%7B1%7D%7BN%7D%20%5Csum_%7Bn%3D1%7D%5E%7BN%7DV_n%28%5Cvec%7BG%7D%29e%5E%7B-i%5Cvec%7BG%7D.%5Cvec%7B%5Ctau%20_n%7D%7D%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%20%285%29)
+
+By defining structural factor as:
+
+![](https://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%5CLARGE%20S_n%28%5Cvec%7BG%7D%29%3D%5Cfrac%7B1%7D%7BN%7De%5E%7B-i%5Cvec%7BG%7D.%5Cvec%7B%5Ctau%20_n%7D%7D%20%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%20%286%29)
+
+The final form of unit cell potential in G space is:
+
+![](https://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%5CLARGE%20V_0%28%5Cvec%7BG%7D%29%3D%5Csum_%7Bn%3D1%7D%5E%7BN%7DS_n%28%5Cvec%7BG%7D%29V_n%28%5Cvec%7BG%7D%29%20%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%20%287%29)
+
+In the case of a solid with zincblende or diamond lattice structure, if the origin is taken half way between the two atoms in the unit cell, the τ<sub>1</sub>=-τ and τ<sub>2</sub>=τ, where τ is τ=a<sub>0</sub>(1/8, 1/8, 1/8), V<sub>0</sub>(r) can be expressed as:
