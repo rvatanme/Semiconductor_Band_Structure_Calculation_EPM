@@ -76,6 +76,8 @@ In the case of a solid with zincblende or diamond lattice structure, if the orig
 These symmetric and asymmetric pseudo-potential is provided as inputs of EMP calculations. In EPM, they are measured experimentally. 
 
 ## Pseudo-Potential Concept
+The pseudopotential is an attempt to replace the complicated effects of the motion of the core (i.e. non-valence) electrons of an atom and its nucleus with an effective potential, or pseudopotential, so that the Schrödinger equation contains a modified effective potential term instead of the Coulombic potential term for core electrons normally found in the Schrödinger equation.
+
 The concept of pseudopotentials was introduced by Fermi to study high-lying atomic states. Afterwards, Hellman proposed that pseudopotentials be used for calculating the energy levels of the alkali metals. The wide spread usage of pseudopotentials did not occur until the late 1950s, when activity in the area of condensed matter physics began to accelerate. The main advantage of using pseudopotentials is that only valence electrons have to be considered. The core electrons are treated as if they are frozen in an atomic-like configuration. As a result, the valence electrons are thought to move in a weak one-electron potential.
 
 The pseudopotential method is based on the orthogonalized plane wave (OPW) method. In this method, the crystal wavefuntion  is constructed to be orthogonal to the core states. This is accomplished by expanding  as a smooth part of symmetrized combinations of Bloch functions , augmented with a linear combination of core states. This is expressed as
