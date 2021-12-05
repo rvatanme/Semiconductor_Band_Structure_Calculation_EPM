@@ -105,10 +105,16 @@ where b<sub>k,t</sub> are orthogonalization coefficients and φ<sub>k</sub> are 
 
 ![](https://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%5CLARGE%20%5CPsi_k%20%3D%20%5Cpsi_k%20&plus;%20%5Csum_%7Bt%7D%3C%5Cphi_t%7C%5Cpsi_k%3E%5Cphi_t%20%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%20%289%29)
 
-To obtain a wave equation for ψ<sub>k</sub>, the Hamiltonian operator:
+To obtain a pseudo wave equation for ψ<sub>k</sub>, the Hamiltonian operator:
 
 ![](https://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%5CLARGE%20H%20%3D%20%5Cfrac%7Bp%5E2%7D%7B2m%7D&plus;V_C%20%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%20%2810%29)
 
 is applied to equation (8), where V<sub>C</sub> is the attractive core potential, and the following wave equation results:
 
-![]()
+![](https://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%5CLARGE%20%28%5Cfrac%7Bp%5E2%7D%7B2m%7D&plus;V_C&plus;V_R%29%5Cpsi_k%3DE%5Cpsi_k%20%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%20%2811%29)
+
+where V<sub>R</sub> represents a short-range, non-Hermitian repulsion potential, of the form:
+
+![](https://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%5CLARGE%20V_R%20%3D%20%5Csum_%7Bt%7D%5Cfrac%7B%28E-E_t%29%3C%5Cphi_t%7C%5Cpsi_k%3E%5Cphi_t%7D%7B%5Cpsi_k%7D%20%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%20%2812%29)
+
+E<sub>t</sub> in equation (7) represents the atomic energy eigenvalue.  The result given in Equation (6) can be thought of as wave equation for the pseudo-wave function, ψ<sub>k</sub>, but the energy eigenvalue E corresponds to the true energy of the crystal wave function Ψ<sub>k</sub>. Furthermore, as a result of the orthogonalization procedure, the repulsive potential V<sub>R</sub>, which serves to cancel the attractive potential VC, is introduced into the pseudo-wave function Hamiltonian. The result is a smoothly varying pseudopotential V<sub>P</sub> = V<sub>C</sub> + V<sub>R</sub>.  This result is known as the Phillips-Kleinman cancellation theorem which provides justification why the electronic structure of strongly-bound valence electrons can be described using a nearly-free electron model and weak potentials. To simplify the problem further, model pseudopotenials are used in place of the actual pseudopotential.
