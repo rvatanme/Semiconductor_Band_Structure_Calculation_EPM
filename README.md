@@ -97,4 +97,18 @@ Approximations:
 
 The concept of pseudopotentials was introduced by Fermi to study high-lying atomic states. Afterwards, Hellman proposed that pseudopotentials be used for calculating the energy levels of the alkali metals. The wide spread usage of pseudopotentials did not occur until the late 1950s, when activity in the area of condensed matter physics began to accelerate. The main advantage of using pseudopotentials is that only valence electrons have to be considered. The core electrons are treated as if they are frozen in an atomic-like configuration. As a result, the valence electrons are thought to move in a weak one-electron potential.
 
-The pseudopotential method is based on the orthogonalized plane wave (OPW) method. In this method, the crystal wavefuntion  is constructed to be orthogonal to the core states. This is accomplished by expanding  as a smooth part of symmetrized combinations of Bloch functions , augmented with a linear combination of core states. This is expressed as
+The pseudopotential method is based on the orthogonalized plane wave (OPW) method. In this method, the crystal wavefuntion Ψ<sub>k</sub> is constructed to be orthogonal to the core states. This is accomplished by expanding Ψ<sub>k</sub> as a smooth part of symmetrized combinations of Bloch functions ψ<sub>k</sub>, augmented with a linear combination of core states. This is expressed as:
+
+![](https://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%5CLARGE%20%5CPsi_k%20%3D%20%5Cpsi_k%20&plus;%20%5Csum_%7Bt%7Db_%7Bk%2Ct%7D%5Cphi_t%20%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%20%288%29)
+
+where b<sub>k,t</sub> are orthogonalization coefficients and φ<sub>k</sub> are core wave functions. For Si-14, the summation over t in equation (8) is a sum over the core states 1s2 2s2 2p6. Since the crystal wave function Ψ<sub>k</sub> is constructed to be orthogonal to the core wave functions, the orthogonalization coefficients can be calculated, thus yielding the final expression:
+
+![](https://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%5CLARGE%20%5CPsi_k%20%3D%20%5Cpsi_k%20&plus;%20%5Csum_%7Bt%7D%3C%5Cphi_t%7C%5Cpsi_k%3E%5Cphi_t%20%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%20%289%29)
+
+To obtain a wave equation for ψ<sub>k</sub>, the Hamiltonian operator:
+
+![](https://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%5CLARGE%20H%20%3D%20%5Cfrac%7Bp%5E2%7D%7B2m%7D&plus;V_C%20%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%20%2810%29)
+
+is applied to equation (8), where V<sub>C</sub> is the attractive core potential, and the following wave equation results:
+
+![]()
