@@ -78,6 +78,23 @@ These symmetric and asymmetric pseudo-potential is provided as inputs of EMP cal
 ## Pseudo-Potential Concept
 The pseudopotential is an attempt to replace the complicated effects of the motion of the core (i.e. non-valence) electrons of an atom and its nucleus with an effective potential, or pseudopotential, so that the Schrödinger equation contains a modified effective potential term instead of the Coulombic potential term for core electrons normally found in the Schrödinger equation.
 
+The pseudopotential is an effective potential constructed to replace the atomic all-electron potential (full-potential) such that core states are eliminated and the valence electrons are described by pseudo-wavefunctions with significantly fewer nodes. This allows the pseudo-wavefunctions to be described with far fewer Fourier modes, thus making plane-wave basis sets practical to use. In this approach usually only the chemically active valence electrons are dealt with explicitly, while the core electrons are 'frozen', being considered together with the nuclei as rigid non-polarizable ion cores. It is possible to self-consistently update the pseudopotential with the chemical environment that it is embedded in, having the effect of relaxing the frozen core approximation, although this is rarely done. In codes using local basis functions, like Gaussian, often effective core potentials are used that only freeze the core electrons.
+
+First-principles pseudopotentials are derived from an atomic reference state, requiring that the pseudo- and all-electron valence eigenstates have the same energies and amplitude (and thus density) outside a chosen core cut-off radius r<sub>c</sub>.
+
+Pseudopotentials with larger cut-off radius are said to be softer, that is more rapidly convergent, but at the same time less transferable, that is less accurate to reproduce realistic features in different environments.
+
+Motivation:
+
+    Reduction of basis set size
+    Reduction of number of electrons
+    Inclusion of relativistic and other effects
+
+Approximations:
+
+    One-electron picture.
+    The small-core approximation assumes that there is no significant overlap between core and valence wave-function. Nonlinear core corrections[2] or "semicore" electron inclusion[3] deal with situations where overlap is non-negligible.
+
 The concept of pseudopotentials was introduced by Fermi to study high-lying atomic states. Afterwards, Hellman proposed that pseudopotentials be used for calculating the energy levels of the alkali metals. The wide spread usage of pseudopotentials did not occur until the late 1950s, when activity in the area of condensed matter physics began to accelerate. The main advantage of using pseudopotentials is that only valence electrons have to be considered. The core electrons are treated as if they are frozen in an atomic-like configuration. As a result, the valence electrons are thought to move in a weak one-electron potential.
 
 The pseudopotential method is based on the orthogonalized plane wave (OPW) method. In this method, the crystal wavefuntion  is constructed to be orthogonal to the core states. This is accomplished by expanding  as a smooth part of symmetrized combinations of Bloch functions , augmented with a linear combination of core states. This is expressed as
