@@ -69,4 +69,10 @@ The final form of unit cell potential in G space is:
 
 ![](https://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%5CLARGE%20V_0%28%5Cvec%7BG%7D%29%3D%5Csum_%7Bn%3D1%7D%5E%7BN%7DS_n%28%5Cvec%7BG%7D%29V_n%28%5Cvec%7BG%7D%29%20%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%20%287%29)
 
-In the case of a solid with zincblende or diamond lattice structure, if the origin is taken half way between the two atoms in the unit cell, the τ<sub>1</sub>=-τ and τ<sub>2</sub>=τ, where τ is τ=a<sub>0</sub>(1/8, 1/8, 1/8), V<sub>0</sub>(r) can be expressed as:
+In the case of a solid with zincblende or diamond lattice structure, if the origin is taken half way between the two atoms in the unit cell, the τ<sub>1</sub>=-τ and τ<sub>2</sub>=τ, where τ is τ=a<sub>0</sub>(1/8, 1/8, 1/8), V<sub>0</sub>(G) can be expressed as a combination of symmetric and asymmetric potential as follows:
+
+![](https://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%5CLARGE%20V_0%28%5Cvec%7BG%7D%29%3D%20V_S%28%5Cvec%7BG%7D%29cos%28%5Cvec%7BG%7D.%5Cvec%7B%5Ctau%7D%29&plus;iV_Asin%28%5Cvec%7BG%7D.%5Cvec%7B%5Ctau%7D%29%2C%20%5C%5C%5C%5C%20V_S%28%5Cvec%7BG%7D%29%3D%5Cfrac%7B1%7D%7B2%7D%5BV_1%28%5Cvec%7BG%7D%29&plus;V_2%28%5Cvec%7BG%7D%29%5D%2C%20%5C%5C%5C%5C%20V_A%28%5Cvec%7BG%7D%29%3D%5Cfrac%7B1%7D%7B2%7D%5BV_1%28%5Cvec%7BG%7D%29-V_2%28%5Cvec%7BG%7D%29%5D)
+
+These symmetric and asymmetric pseudo-potential is provided as inputs of EMP calculations. In EPM, they are measured experimentally. 
+
+## Pseudo-Potential Concept
