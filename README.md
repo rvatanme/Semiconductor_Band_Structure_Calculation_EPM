@@ -40,12 +40,12 @@ By substituting pseudo-function and Fourier transformed potential in the Schroed
 
 Depending on the number (N) of chosen reciprocal plane waves, above equation has N solution that each of them presents the E<sub>nk</sub> and results to a<sub>m</sub>(n,k) and Ψ<sub>nk</sub>(r). The number of used reciprocal plane waves are determined by the cutoff energy where the energy of those plane waves are less than Ecutoff ћ<sup>2</sup>G<sup>2</sup>/2m<Ecutoff. |G<sup>2</sup>| is usually expressed in terms of (2π/a)<sup>2</sup> where a is the lattice constant. Since for every k, there are a number of equivalent (k+G)’s, where Ψ<sub>k+G</sub>(r)=Ψ<sub>k</sub>(r) and E(k+G)=E(k), the unique values of k are the ones inside the first Brillouin zone.  
 
-## Periodic POtential: Reciprocal Space Expression 
+## Periodic Potential: Reciprocal Space Expression 
 In general, periodic potential V<sub>p</sub>(r) is a linear combination of atomic potential, V<sub>n</sub>(r-τ<sub>n</sub>), that can be expressed as a summation over all lattice translational R vectors: 
 
 ![](https://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%5CLARGE%20V_p%28%5Cvec%7Br%7D%29%3D%5Csum%20_%7BR%7D%20%5Csum_%7Bn%3D1%7D%5E%7BN%7DV_n%28%5Cvec%7Br%7D-%5Ctau%20_n%20-%20%5Cvec%7BR%7D%29)
 
-where r is the position of electron and n is the nth atom, both inside the unit cell. The inner sum of this equation can be substituted by the unit cell potential defined as follows:
+where r is the position of electron and τ<sub>n</sub> is the location of nth atom, both inside the unit cell. The inner sum of this equation can be substituted by the unit cell potential defined as follows:
 
 ![](https://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%5CLARGE%20V_0%28%5Cvec%7Br%7D%29%20%3D%20%5Csum_%7Bn%3D1%7D%5E%7BN%7D%20V_n%28%5Cvec%7Br%7D-%5Ctau%20_n%29)
 
@@ -57,4 +57,4 @@ As mentioned before, this periodic potential can be expanded by a set of chosen 
 
 ![](https://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%5CLARGE%20V_p%28%5Cvec%7Br%7D%29%20%3D%20%5Csum_%7BG%7DV_0%28%5Cvec%7BG%7D%29e%5E%7Bi%5Cvec%7BG%7D.%5Cvec%7Br%7D%7D%2C%20%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%20%281%29%20%5C%5C%5C%5C%5C%5C%20V_0%28%5Cvec%7BG%7D%29%20%3D%20%5Cfrac%7B1%7D%7B%5COmega%7D%5Cint_%7B%5COmega%7Dd%5E3rV_0%28%5Cvec%7Br%7D%29e%5E%7B-i%5Cvec%7BG%7D.%5Cvec%7Br%7D%7D%5C%3B%5C%3B%5C%3B%5C%3B%20%282%29)
 
-where Ω is the volume of the unit cell. By substituing equation (2) in equation (1), we get the close form of a preiodic potential in a reciprocal space as follows:
+where Ω is the unit cell volume and V<sub>0</sub>(G) is the unit cell potential expressed in reciprocal lattice. By substituing equation (2) in equation (1), we get the close form of a preiodic potential in a reciprocal space as follows:
