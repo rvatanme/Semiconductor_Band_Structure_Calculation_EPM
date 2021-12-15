@@ -174,13 +174,14 @@ while (i < 1):
     Inp['t'] = t
 
     # Symmetry path L->Gamma
+    ekm = []
     ik_curr=0
     sumx=0.0
     X0=0.5
     Y0=0.5
     Z0=0.5
     
-    for ik in range(1, N_ek+1):
+    for ik in range(1, N_ek+2):
         H_EPM = []
         ek = []
         dk1['dkx']=0.500*(1.00 - (ik-1)/N_ek)
@@ -188,18 +189,92 @@ while (i < 1):
         dk1['dkz']=0.500*(1.00 - (ik-1)/N_ek)
         generate_Hamil(Inp, dk1, Ig_Vec0, pseu, ek, H_EPM)
         ekm.append(ek)
-    
-        
+        #print (ek)
+   
     # Dumping data for Symmetry path L->Gamma
     myfile = open(filename, "a")
-    for lh in range(1,N_ek+1):
+    for lh in range(len(ekm)):
         myfile.write(str(ik_curr + lh) + "\t")
-        for kh in range(8):
+        for kh in range(len(ek)):
             myfile.write(str(ekm[lh][kh]) + "\t")
         myfile.write("\n")
     myfile.close()
     
+    # Symmetry path Gamma->X
+    ik_curr += ik - 1
+    ekm = []
+    X0=0.0
+    Y0=0.0
+    Z0=0.0
+    for ik in range(1, N_ek+1):
+        H_EPM = []
+        ek = []
+        dk1['dkx']= ik/N_ek
+        dk1['dky']=0.0
+        dk1['dkz']=0.0
+        generate_Hamil(Inp, dk1, Ig_Vec0, pseu, ek, H_EPM)
+        ekm.append(ek)
+        
+
+    # Dumping data for Symmetry path Gamma->X
+    myfile = open(filename, "a")
+    for lh in range(len(ekm)):
+        myfile.write(str(ik_curr + lh) + "\t")
+        for kh in range(len(ek)):
+            myfile.write(str(ekm[lh][kh]) + "\t")
+        myfile.write("\n")
+    myfile.close()
+
+    # Symmetry path X->U
+    ik_curr += ik -1
+    ekm = []
+    X0=1.0
+    Y0=0.0
+    Z0=0.0
+    for ik in range(1, N_ek+1):
+        H_EPM = []
+        ek = []
+        dk1['dkx']=1.0
+        dk1['dky']= (ik)/(N_ek)*1.0/4.0
+        dk1['dkz']= (ik)/(N_ek)*1.0/4.0
+        generate_Hamil(Inp, dk1, Ig_Vec0, pseu, ek, H_EPM)
+        ekm.append(ek)
+        
+
+    # Dumping data for Symmetry path X->U
+    myfile = open(filename, "a")
+    for lh in range(len(ekm)):
+        myfile.write(str(ik_curr + lh/2) + "\t")
+        for kh in range(len(ek)):
+            myfile.write(str(ekm[lh][kh]) + "\t")
+        myfile.write("\n")
+    myfile.close()
     
+    # Symmetry path K->Gamma
+    ik_curr += ik/2
+    ekm = []
+    X0=0.75
+    Y0=0.75
+    Z0=0.0
+    for ik in range(N_ek):
+        H_EPM = []
+        ek = [] 
+        dk1['dkx']=0.75*(1.0- ik/N_ek)
+        dk1['dky']=0.75*(1.0- ik/N_ek)
+        dk1['dkz']=0.0
+        generate_Hamil(Inp, dk1, Ig_Vec0, pseu, ek, H_EPM)
+        ekm.append(ek)
+
+
+    # Dumping data for Symmetry path K->Gamma
+    myfile = open(filename, "a")
+    for lh in range(len(ekm)):
+        myfile.write(str(ik_curr + lh) + "\t")
+        for kh in range(len(ek)):
+            myfile.write(str(ekm[lh][kh]) + "\t")
+        myfile.write("\n")
+    myfile.close()
+
     i += 1
 
 print("--- Date = %s --- Runtime = %s seconds ---" % (today,(time() - start)))
